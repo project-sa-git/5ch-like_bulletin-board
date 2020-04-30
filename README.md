@@ -1,19 +1,14 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# 5ch-like_bulletin-board
 
-これは、次の教材で作られたサンプルアプリケーションです。   
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-[Michael Hartl](http://www.michaelhartl.com/) 著
+掲示板チャンネルライクの投稿型アプリケーションです。
 
-## ライセンス
+# ライセンス
 
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
+Please refrain from using without permission.
 
-## 使い方
+許可なき利用はご遠慮ください。
 
-このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。
-その後、次のコマンドで必要になる RubyGems をインストールします。
+# インストール
 
 ```
 $ bundle install --without production
@@ -25,20 +20,17 @@ $ bundle install --without production
 $ rails db:migrate
 ```
 
-最後に、テストを実行してうまく動いているかどうか確認してください。
+データベースへ初期データの登録
 
 ```
-$ rails test
+$ rails db:seed
 ```
 
-テストが無事に通ったら、Railsサーバーを立ち上げる準備が整っているはずです。
+Railsサーバーの立ち上げ
 
 ```
 $ rails server
 ```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
 
 # ゲストユーザーログイン
 email   : "example@railstutorial.org"
